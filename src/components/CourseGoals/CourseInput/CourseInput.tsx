@@ -5,7 +5,7 @@ import Button from "../../UI/Button";
 import "./CourseInput.css";
 
 type CourseInputProps = {
-  onAddGoal?: (goal: string) => void;
+  onAddGoal: (goal: string) => void;
 };
 
 const CourseInput: FC<CourseInputProps> = (props) => {
@@ -19,7 +19,7 @@ const CourseInput: FC<CourseInputProps> = (props) => {
 
   const formSubmitHandler = (event: React.FormEvent) => {
     event.preventDefault();
-    props.onAddGoal?.(enteredValue);
+    props.onAddGoal(enteredValue);
   };
 
   return (

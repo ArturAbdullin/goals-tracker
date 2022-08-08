@@ -1,12 +1,12 @@
 import React, { FC } from "react";
 import { GoalItem } from "../../../models/courseGoalItem";
-import CourseGoalItem from "../CourseGoalItem/CourseGoalItem";
+import CourseGoalItem, { DeleteGoalEventHandler } from "../CourseGoalItem/CourseGoalItem";
 
 import "./CourseGoalList.css";
 
 type CourseGoalListProps = {
   items: GoalItem[];
-  onDeleteItem: (id: string) => void;
+  onDeleteItem: DeleteGoalEventHandler;
 };
 
 const CourseGoalList: FC<CourseGoalListProps> = (props) => {

@@ -2,10 +2,12 @@ import React, { FC } from "react";
 
 import "./CourseGoalItem.css";
 
-export type CourseGoalItemProps = {
+export type DeleteGoalEventHandler = (id: string) => void;
+
+type CourseGoalItemProps = {
   children?: React.ReactNode;
   id: string;
-  onDelete: (id: string) => void;
+  onDelete: DeleteGoalEventHandler;
 };
 
 const CourseGoalItem: FC<CourseGoalItemProps> = (props) => {

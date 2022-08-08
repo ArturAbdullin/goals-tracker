@@ -4,8 +4,10 @@ import Button from "../../UI/Button";
 
 import "./CourseInput.css";
 
+export type AddGoalEventHandler = (goal: string) => void;
+
 type CourseInputProps = {
-  onAddGoal: (goal: string) => void;
+  onAddGoal: AddGoalEventHandler;
 };
 
 const CourseInput: FC<CourseInputProps> = (props) => {

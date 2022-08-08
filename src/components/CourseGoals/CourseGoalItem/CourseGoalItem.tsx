@@ -1,8 +1,7 @@
 import React, { FC } from "react";
+import { DeleteGoalEventHandler } from "../../../models/eventHandlers";
 
 import "./CourseGoalItem.css";
-
-export type DeleteGoalEventHandler = (id: string) => void;
 
 type CourseGoalItemProps = {
   children?: React.ReactNode;

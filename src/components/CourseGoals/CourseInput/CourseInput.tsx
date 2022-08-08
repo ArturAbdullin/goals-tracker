@@ -1,10 +1,9 @@
 import React, { FC } from "react";
 import { useState } from "react";
+import { AddGoalEventHandler } from "../../../models/eventHandlers";
 import Button from "../../UI/Button";
 
 import "./CourseInput.css";
-
-export type AddGoalEventHandler = (goal: string) => void;
 
 type CourseInputProps = {
   onAddGoal: AddGoalEventHandler;

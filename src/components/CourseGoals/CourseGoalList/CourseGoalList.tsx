@@ -1,6 +1,7 @@
 import React, { FC } from "react";
 import { GoalItem } from "../../../models/courseGoalItem";
-import CourseGoalItem, { DeleteGoalEventHandler } from "../CourseGoalItem/CourseGoalItem";
+import { DeleteGoalEventHandler } from "../../../models/eventHandlers";
+import CourseGoalItem from "../CourseGoalItem/CourseGoalItem";
 
 import "./CourseGoalList.css";
 

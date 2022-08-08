@@ -1,5 +1,6 @@
 import React, { FC } from "react";
 import { useState } from "react";
+import Button from "../../UI/Button";
 
 import "./CourseInput.css";
 
@@ -27,6 +28,7 @@ const CourseInput: FC<CourseInputProps> = (props) => {
         <label htmlFor="">Course Goal</label>
         <input type="text" onChange={goalInputChangeHandler} />
       </div>
+      <Button type="submit">Add Goal</Button>
     </form>
   );
 };

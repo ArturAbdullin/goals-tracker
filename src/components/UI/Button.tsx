@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 
-import "./Button.css";
+import styles from "./Button.module.css";
 
 type ButtonProps = {
   children?: React.ReactNode;
@@ -10,7 +10,7 @@ type ButtonProps = {
 
 const Button: FC<ButtonProps> = (props) => {
   return (
-    <button type={props.type} className="button" onClick={props.onClick}>
+    <button type={props.type} className={styles.button} onClick={props.onClick}>
       {props.children}
     </button>
   );
